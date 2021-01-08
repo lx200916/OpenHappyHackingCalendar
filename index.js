@@ -18,19 +18,20 @@ const PUNCHED = config.punched;
 const MONTHLY = config.monthly;
 
 const HIGHLIGHT = ['markup', 'css', 'clike', 'javascript', 'abap', 'actionscript', 'ada',
-'apacheconf', 'apl', 'applescript', 'arduino', 'asciidoc', 'aspnet', 'autohotkey', 'autoit',
-'bash', 'basic', 'batch', 'bison', 'brainfuck', 'bro', 'c', 'csharp', 'cpp', 'coffeescript',
-'crystal', 'css-extras', 'd', 'dart', 'django', 'diff', 'docker', 'eiffel', 'elixir', 'erlang',
-'fsharp', 'flow', 'fortran', 'gherkin', 'git', 'glsl', 'go', 'graphql', 'groovy', 'haml',
-'handlebars', 'haskell', 'haxe', 'http', 'icon', 'inform7', 'ini', 'j', 'java', 'jolie',
-'json', 'julia', 'keyman', 'kotlin', 'latex', 'less', 'livescript', 'lolcode', 'lua',
-'makefile', 'markdown', 'matlab', 'mel', 'mizar', 'monkey', 'n4js', 'nasm', 'nginx', 'nim',
-'nix', 'nsis', 'objectivec', 'ocaml', 'opencl', 'oz', 'parigp', 'parser', 'pascal', 'perl',
-'php', 'php-extras', 'powershell', 'processing', 'prolog', 'properties', 'protobuf', 'pug',
-'puppet', 'pure', 'python', 'q', 'qore', 'r', 'jsx', 'renpy', 'reason', 'rest', 'rip',
-'roboconf', 'ruby', 'rust', 'sas', 'sass', 'scss', 'scala', 'scheme', 'smalltalk', 'smarty',
-'sql', 'stylus', 'swift', 'tcl', 'textile', 'twig', 'typescript', 'vbnet', 'verilog', 'vhdl',
-'vim', 'wiki', 'xojo', 'yaml'];
+    'apacheconf', 'apl', 'applescript', 'arduino', 'asciidoc', 'aspnet', 'autohotkey', 'autoit',
+    'bash', 'basic', 'batch', 'bison', 'brainfuck', 'bro', 'c', 'csharp', 'cpp', 'coffeescript',
+    'crystal', 'css-extras', 'd', 'dart', 'django', 'diff', 'docker', 'eiffel', 'elixir', 'erlang',
+    'fsharp', 'flow', 'fortran', 'gherkin', 'git', 'glsl', 'go', 'graphql', 'groovy', 'haml',
+    'handlebars', 'haskell', 'haxe', 'http', 'icon', 'inform7', 'ini', 'j', 'java', 'jolie',
+    'json', 'julia', 'keyman', 'kotlin', 'latex', 'less', 'livescript', 'lolcode', 'lua',
+    'makefile', 'markdown', 'matlab', 'mel', 'mizar', 'monkey', 'n4js', 'nasm', 'nginx', 'nim',
+    'nix', 'nsis', 'objectivec', 'ocaml', 'opencl', 'oz', 'parigp', 'parser', 'pascal', 'perl',
+    'php', 'php-extras', 'powershell', 'processing', 'prolog', 'properties', 'protobuf', 'pug',
+    'puppet', 'pure', 'python', 'q', 'qore', 'r', 'jsx', 'renpy', 'reason', 'rest', 'rip',
+    'roboconf', 'ruby', 'rust', 'sas', 'sass', 'scss', 'scala', 'scheme', 'smalltalk', 'smarty',
+    'sql', 'stylus', 'swift', 'tcl', 'textile', 'twig', 'typescript', 'vbnet', 'verilog', 'vhdl',
+    'vim', 'wiki', 'xojo', 'yaml'
+];
 
 var dates = [];
 
@@ -41,7 +42,7 @@ const shortMonthLastDay = 30;
 const leapDay = 29;
 const nonLeapYearFebLastDay = 28;
 
-const monthLastDayMapping = {2: nonLeapYearFebLastDay};
+const monthLastDayMapping = { 2: nonLeapYearFebLastDay };
 longMonth.forEach(m => {
     monthLastDayMapping[m] = longMonthLastDay;
 });
@@ -55,7 +56,7 @@ function isLeapYear(year) {
 }
 
 function isLastDayOfMonth(month, day) {
-    if(month === 2 && isLeapYear(YEAR)) {
+    if (month === 2 && isLeapYear(YEAR)) {
         return day === leapDay;
     }
     return day === monthLastDayMapping[month];
@@ -63,7 +64,7 @@ function isLastDayOfMonth(month, day) {
 
 for (var month = 1; month <= 12; month++) {
     var lastDay = monthLastDayMapping[month];
-    if(month === 2 && isLeapYear(YEAR)) {
+    if (month === 2 && isLeapYear(YEAR)) {
         lastDay = leapDay;
     }
 
@@ -72,7 +73,7 @@ for (var month = 1; month <= 12; month++) {
     }
 }
 
-var festivals = {'1001': '国庆节'};
+var festivals = { '1001': '国庆节', '1103': 'Rust Conf.', '0624': 'WWDC', '0625': 'WWDC', '0508': 'Google I/O', '0817': '👓', '0401': '🤡' };
 
 for (var monthIndex = 0; monthIndex < 12; monthIndex++) {
     var data = lunarCalendar.calendar(YEAR, monthIndex + 1, false);
@@ -88,13 +89,16 @@ for (var monthIndex = 0; monthIndex < 12; monthIndex++) {
 festivals['0101'] = '元旦';
 
 var res, langs = [];
-
+var slangs = {}
+console.log(lang.length)
 for (var langIndex = 0; langIndex < lang.length; langIndex++) {
     var _lang = lang[langIndex];
     try {
-        var url = null, _desc;
+        var url = null,
+            _desc;
 
         console.log(_lang.lang);
+
 
         if (LANG !== 'zh') {
             url = 'https://zh.wikipedia.org/w/api.php?format=json&action=query&prop=langlinks&lllimit=500&titles=' + encodeURIComponent(_lang.desc);
@@ -117,12 +121,13 @@ for (var langIndex = 0; langIndex < lang.length; langIndex++) {
                     break;
                 }
             }
-        } 
-        
+
+        }
+
         if (!url) {
             url = 'https://zh.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=' + encodeURIComponent(_lang.desc);
         }
-        
+
         res = request('GET', url, {
             socketTimeout: 5000,
             headers: {
@@ -138,13 +143,26 @@ for (var langIndex = 0; langIndex < lang.length; langIndex++) {
         if (_desc) {
             _lang.desc2 = _desc;
         }
-    } catch(e) {
+
+    } catch (e) {
+        console.log(e)
         langIndex--;
         continue;
     }
 
     _lang.code = fs.readFileSync('hacking-date/HackingDate.' + _lang.code, 'utf8').replace(/\$/g, '&#36;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    langs.push(_lang);
+    if (_lang.perferDate != undefined) {
+        date = new Date(YEAR + "-" + _lang.perferDate)
+        if (_lang.perferDate != "01-01") {
+            date.setDate(date.getDate() - 6)
+
+        }
+        slangs[(date.getMonth() + 1) + "-" + date.getDate()] = _lang
+            // lang.splice(langIndex, 1)
+    } else {
+        langs.push(_lang);
+
+    }
 }
 
 var pages = `<div class="${PUNCHED ? 'page punched' : 'page'}">
@@ -157,18 +175,27 @@ var weekly = [];
 var page = '';
 var weeks = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 var months = ['January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'];
+    'July', 'August', 'September', 'October', 'November', 'December'
+];
 langIndex = 0;
-
+slangIndex = 0;
 var newMonth = [];
 var pageIndex = 0;
 var calContent = '';
+var _slang = false
+var sdate = 0
 
 for (var dateIndex = 0; dateIndex < dates.length; dateIndex++) {
     var date = dates[dateIndex];
+    console.log(date.cMonth + "-" + date.cDay)
 
     if (date.cDay === 1) {
         newMonth.push(pageIndex);
+    }
+    if (slangs[date.cMonth + "-" + date.cDay] != undefined) {
+        _slang = true
+        var slang = slangs[date.cMonth + "-" + date.cDay]
+        sdate = date.nWeek
     }
 
     if (MONTHLY) {
@@ -239,21 +266,33 @@ for (var dateIndex = 0; dateIndex < dates.length; dateIndex++) {
 
         if (langIndex < lang.length) {
             var _code;
-            if (lang[langIndex].lang === 'CSS') {
-                page = page.replace('{{code}}', lang[langIndex].code.replace('2018-03-25', `${date.cYear}-${leftPad(date.cMonth, 2, '0')}-${leftPad(date.cDay, 2, '0')}`));
-            } else {
-                page = page.replace('{{code}}', lang[langIndex].code);
+            var _lang = langs[langIndex]
+            console.log(_slang)
+            if (_slang) {
+                _lang = slang
+                console.log(slang)
             }
-            page = page.replace('{{lang}}', lang[langIndex].lang);
-            if (HIGHLIGHT.indexOf(lang[langIndex].class) !== -1) {
-                page = page.replace('{{class}}', 'language-' + lang[langIndex].class);
+
+            if (_lang.lang === 'CSS') {
+                page = page.replace('{{code}}', _lang.code.replace('2018-03-25', `${date.cYear}-${leftPad(date.cMonth, 2, '0')}-${leftPad(date.cDay, 2, '0')}`));
             } else {
-                page = page.replace('{{class}}', lang[langIndex].class);
+                page = page.replace('{{code}}', _lang.code);
             }
-            
-            page = page.replace('{{desc}}', lang[langIndex].descWiki);
-            page = page.replace('{{qr}}', QR ? `http://chart.apis.google.com/chart?chs=360x360&cht=qr&choe=UTF-8&chld=M|0&chl=${encodeURIComponent('https://' + (lang[langIndex].desc2 ? LANG : 'zh') + '.wikipedia.org/wiki/' + encodeURIComponent(lang[langIndex].desc2 || lang[langIndex].desc))}` : 'data:image/gif;base64,R0lGODlhAQABAAAAACw=');
-            langIndex++;
+            page = page.replace('{{lang}}', _lang.lang);
+            if (HIGHLIGHT.indexOf(_lang.class) !== -1) {
+                page = page.replace('{{class}}', 'language-' + _lang.class);
+            } else {
+                page = page.replace('{{class}}', _lang.class);
+            }
+
+            page = page.replace('{{desc}}', _lang.descWiki);
+            if (_lang.descriptionstr != undefined) {
+                page = page.replace('{{descriptionstr}}', _lang.descriptionstr);
+            }
+            page = page.replace('{{qr}}', QR ? `http://chart.apis.google.com/chart?chs=360x360&cht=qr&choe=UTF-8&chld=M|0&chl=${encodeURIComponent('https://' + (_lang.desc2 ? LANG : 'zh') + '.wikipedia.org/wiki/' + encodeURIComponent(_lang.desc2 || _lang.desc))}` : 'data:image/gif;base64,R0lGODlhAQABAAAAACw=');
+            if (_slang == false) { langIndex++; } else {
+                _slang = false
+            }
         }
     } else {
         page = page.replace(`{{week${date.nWeek}}}`, weeks[date.nWeek - 1]);
@@ -267,6 +306,8 @@ for (var dateIndex = 0; dateIndex < dates.length; dateIndex++) {
             page = page.replace(`{{week${i + 1}}}`, '');
             page = page.replace(`{{date${i + 1}}}`, '');
             page = page.replace(`{{ldate${i + 1}}}`, '');
+            page = page.replace('{{descriptionstr}}', "");
+
         }
 
         weekly.push(page);

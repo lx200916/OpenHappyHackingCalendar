@@ -2,32 +2,40 @@
     "lang": "C",
     "class": "c",
     "desc": "C语言",
-    "code": "c"
+    "code": "c",
+    "perferDate": "01-01",
+    "descriptionstr": "万叶之始."
 }, {
     "lang": "C++",
     "class": "cpp",
     "desc": "C++",
-    "code": "cpp"
+    "code": "cpp",
+    "descriptionstr": "Bjarne Stroustrup发明了一把射击时能同时向前和向后两个方向发射子弹的绝世好枪.但他对此发明造成的致死和终身残疾数量感到还不够满意,所以他又发明了C++."
 }, {
     "lang": "Java",
     "class": "java",
     "desc": "Java",
-    "code": "java"
+    "code": "java",
+    "descriptionstr": "James Gosling发明了Java。Java是一个相对繁冗的、带垃圾收集的、基于类的、静态类型的、单分派的面向对象语言，拥有单实现继承和多接口继承。Sun不遗余力地宣传着Java的独一无二不同凡响之处。"
 }, {
     "lang": "C#",
     "class": "csharp",
     "desc": "C♯",
-    "code": "cs"
+    "code": "cs",
+    "descriptionstr": "Anders Hejlsberg发明了C#。C#是一个相对繁冗的、带垃圾收集的、基于类的、静态类型的、单分派的面向对象语言，拥有单实现继承和多接口继承。微软不遗余力地宣传着C#的独一无二不同凡响之处。"
 }, {
     "lang": "Python",
     "class": "python",
     "desc": "Python",
-    "code": "py"
+    "code": "py",
+    "perferDate": "08-17",
+    "descriptionstr": "尽管Python被发明于1991年,但是火遍大<u>江</u>南北还是在Google(把它从犄角里扒拉出来并)大力推广之后.<u>所以说一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程.</u>"
 }, {
     "lang": "TypeScript",
     "class": "typescript",
     "desc": "TypeScript",
-    "code": "ts"
+    "code": "ts",
+    "descriptionstr": "低情商:我会写TypeScript<br>高情商:我是一名追逐前沿技术的全栈工程师."
 }, {
     "lang": "PHP",
     "class": "php",
@@ -37,7 +45,8 @@
     "lang": "JavaScript",
     "class": "javascript",
     "desc": "JavaScript",
-    "code": "js"
+    "code": "js",
+    "descriptionstr": "Brendan Eich读完了历史上所有在程序语言设计中曾经出现过的错误，自己又发明了一些更多的错误，然后用它们创造出了LiveScript。之后，为了紧跟 Java语言的时髦潮流，它被重新命名为JavaScript。再然后，为了追随一种皮肤病的时髦潮流，这语言又被命名为ECMAScript。"
 }, {
     "lang": "Visual Basic",
     "class": "vbnet",
@@ -47,22 +56,27 @@
     "lang": "Perl",
     "class": "perl",
     "desc": "Perl",
-    "code": "pl"
+    "code": "pl",
+    "descriptionstr": "Perl 是唯一一门在 RSA 加密前后看起来一样的语言."
 }, {
     "lang": "Ruby",
     "class": "ruby",
     "desc": "Ruby",
-    "code": "rb"
+    "code": "rb",
+    "descriptionstr": "Took a road to nowhere on my own<br>Like Dorothy on the yellow brick<br>Hope my Ruby shoes get us there quick."
 }, {
     "lang": "CoffeeScript",
     "class": "coffeescript",
     "desc": "CoffeeScript",
-    "code": "coffee"
+    "code": "coffee",
+    "descriptionstr": "<strong>HTTP Status 418</strong> I'm a teapot"
 }, {
-    "lang": "CSS",
-    "class": "css",
-    "desc": "层叠样式表",
-    "code": "css"
+    "lang": "Rust",
+    "class": "rust",
+    "desc": "Rust",
+    "code": "rs",
+    "perferDate": "11-03",
+    "descriptionstr": "虽然现在 GC 技术已经发展得如此先进,但是大家还是迫切地想去除它,我觉得主要原因是编译器作者很难和人解释清楚自己大部分时间在研究垃圾回收的工作。"
 }, {
     "lang": "R",
     "class": "r",
@@ -77,7 +91,9 @@
     "lang": "Swift",
     "class": "swift",
     "desc": "Swift_(程式語言)",
-    "code": "swift"
+    "code": "swift",
+    "perferDate": "06-24",
+    "descriptionstr": "Chris Lattner开发Swift时的主要设计目标就是不要成为Objective-C，最终它看起来像Java."
 }, {
     "lang": "MATLAB",
     "class": "matlab",
@@ -87,12 +103,15 @@
     "lang": "Go",
     "class": "go",
     "desc": "Go",
-    "code": "go"
+    "code": "go",
+    "perferDate": "05-28",
+    "descriptionstr": "在使用Channel优化一个异步API后,它的性能提升到可以在调用前返回结果."
 }, {
     "lang": "Objective-C",
     "class": "objectivec",
     "desc": "Objective-C",
-    "code": "oc.m"
+    "code": "oc.m",
+    "descriptionstr": "Brad Cox和Tom Love创造了Objective-C，宣称“该语言完美地结合了C的内存安全性与Smalltalk的神奇效率”。现在的历史学家怀疑这两人其实是阅读障碍症患者。"
 }, {
     "lang": "SQL",
     "class": "sql",
@@ -102,7 +121,9 @@
     "lang": "HTML",
     "class": "html",
     "desc": "HTML",
-    "code": "html"
+    "code": "html",
+    "descriptionstr": "其实,把HTML列为编程语言正是愚人节彩蛋的一部分.<br>Happy AprilFool!",
+    "perferDate": "04-01"
 }, {
     "lang": "Dart",
     "class": "dart",
@@ -117,7 +138,8 @@
     "lang": "Ada",
     "class": "ada",
     "desc": "Ada",
-    "code": "ada"
+    "code": "ada",
+    "descriptionstr": "为了纪念伟大的先辈程序员Ada Lovelace那能够写出永远也无法被执行的代码的彪悍技能,Jean Ichbiah和美国国防部创造了Ada语言.尽管缺乏证据显示有任何重要的Ada程序曾经被完成过,历史学家仍然确信Ada是个成功的公益项目,它让数以千计的国防承包商免于沦落为与黑帮为伍."
 }, {
     "lang": "Erlang",
     "class": "erlang",
@@ -127,12 +149,9 @@
     "lang": "Lisp",
     "class": "lisp",
     "desc": "LISP",
-    "code": "lisp"
-}, {
-    "lang": "Lua",
-    "class": "lua",
-    "desc": "Lua",
-    "code": "lua"
+    "code": "lisp",
+    "descriptionstr": "由于冷战期间的<strong>战略括号储备</strong>所造成的巨大成本,Lisp从未流行过.然而Lisp仍然被视作一门有影响力的语言,在关键的算法思想诸如递归和提升逼格上尤为典范.<br>*<strong>战略括号储备</strong>：据信是因为克格勃对于他们费尽千辛万苦搜集到的程序片段全都是括号感到极端愤怒,于是封锁了世界各地的括号矿产资源,导致白宫方面不得不加强战略浓缩括号的储备."
+
 }, {
     "lang": "F#",
     "class": "fsharp",
@@ -167,12 +186,14 @@
     "lang": "AppleScript",
     "class": "applescript",
     "desc": "AppleScript",
-    "code": "scpt"
+    "code": "scpt",
+    "descriptionstr": "我的西班牙语知识主要来自于 macOS 的 Codename."
 }, {
     "lang": "Bash",
     "class": "bash",
     "desc": "Bash",
-    "code": "sh"
+    "code": "sh",
+    "descriptionstr": "Everything that kills me makes me feel alive.<br>then it kills -9 me."
 }, {
     "lang": "Assembly Language",
     "class": "avrasm",
@@ -187,7 +208,8 @@
     "lang": "TeX",
     "class": "latex",
     "desc": "TeX",
-    "code": "tex"
+    "code": "tex",
+    "descriptionstr": "创始人高德纳表示Tex最后一次升级是将版本数改为π,那时任何余下的漏洞将被看作程序的功能."
 }, {
     "lang": "Batch",
     "class": "cmd",
@@ -207,7 +229,8 @@
     "lang": "Scala",
     "class": "scala",
     "desc": "Scala",
-    "code": "scala"
+    "code": "scala",
+    "descriptionstr": "Martin Odersky创造了Scala，一种结合了面向对象和函数式编程的语言,这同时激怒了两个阵营的忠实信徒，他们立刻宣布要发动圣战烧死异教徒。"
 }, {
     "lang": "AWK",
     "class": "awk",
@@ -217,7 +240,8 @@
     "lang": "Excel Macro",
     "class": "excel",
     "desc": "Microsoft_Excel",
-    "code": "xls"
+    "code": "xls",
+    "descriptionstr": "众所周知,大部分Excel使用者并不Excel,就好像大多数使用PowerPoint的人并没有Power和Points一样."
 }, {
     "lang": "Clojure",
     "class": "clojure",
@@ -227,7 +251,8 @@
     "lang": "Prolog",
     "class": "prolog",
     "desc": "Prolog",
-    "code": "pro"
+    "code": "pro",
+    "descriptionstr": "Alain Colmerauer设计了逻辑编程语言Prolog.他的目标是创造一个具有两岁小孩智商的程序语言.为了证明他成功达到了这个目标,他展示了一个Prolog程序,它对于每条查询都会机智地给出相同的回答：“No”."
 }, {
     "lang": "Vala",
     "class": "vala",
@@ -237,7 +262,8 @@
     "lang": "Vim Script",
     "class": "vim",
     "desc": "Vim",
-    "code": "vim"
+    "code": "vim",
+    "descriptionstr": "如何生成随机字符串?<br>让新手退出Vim"
 }, {
     "lang": "AutoIt",
     "class": "autoit",
@@ -252,15 +278,23 @@
     "lang": "Fortran",
     "class": "fortran",
     "desc": "Fortran",
-    "code": "fortran"
+    "code": "fortran",
+    "descriptionstr": "关于IBM或FORTRAN并没有什么特别好笑的地方.除了,写FORTRAN程序的时候不系蓝领带将被编译器视作是一个syntax error."
 }, {
     "lang": "Haskell",
     "class": "haskell",
     "desc": "Haskell",
-    "code": "hs"
+    "code": "hs",
+    "descriptionstr": "素食主义鼓吹者：为了获取食物而不必要地杀死动物是邪恶的；<br>“纯函数式编程”鼓吹者：为了编程而引入不必要的副作用是邪恶的。"
 }, {
     "lang": "Haxe",
     "class": "haxe",
     "desc": "Haxe",
     "code": "hx"
+}, {
+    "lang": "BrainFuck",
+    "class": "brainfuck",
+    "desc": "Brainfuck",
+    "code": "bf",
+    "descriptionstr": "虽然看起来好像是在开玩笑,但下面代码的输出是<br><strong>Goodbye 2021!<br>Hello 2022!<strong>"
 }]

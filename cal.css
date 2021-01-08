@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansscsliced.css);
-
 @page {
     size: A4;
     margin: 0
@@ -16,7 +15,7 @@ body {
 }
 
 .monthly table {
-    border-spacing:0;
+    border-spacing: 0;
     border-collapse: collapse;
     margin-top: 30mm;
 }
@@ -66,9 +65,7 @@ body {
     top: 3mm;
     left: 6mm;
     border-radius: 5mm;
-    box-shadow: 0 10mm 0 #ccc,
-                0 50mm 0 #ccc,
-                0 90mm 0 #ccc;
+    box-shadow: 0 10mm 0 #ccc, 0 50mm 0 #ccc, 0 90mm 0 #ccc;
 }
 
 .page.punched:after {
@@ -80,9 +77,7 @@ body {
     top: 184mm;
     left: 6mm;
     border-radius: 5mm;
-    box-shadow: 0 10mm 0 #ccc,
-                0 50mm 0 #ccc,
-                0 90mm 0 #ccc;
+    box-shadow: 0 10mm 0 #ccc, 0 50mm 0 #ccc, 0 90mm 0 #ccc;
 }
 
 .page h1.title {
@@ -102,7 +97,7 @@ body {
 
 .page .main-date {
     position: absolute;
-    top: 50mm;
+    top: 65mm;
     right: 20mm;
     font-size: 2em;
 }
@@ -113,7 +108,7 @@ body {
 
 .page .meta {
     position: absolute;
-    top: 65mm;
+    top: 80mm;
     right: 20mm;
     font-size: 1.4em;
 }
@@ -127,7 +122,7 @@ body {
 }
 
 .page pre {
-    margin-top: 30mm!important;
+    margin-top: 40mm!important;
     margin-left: 10mm!important;
     white-space: pre-wrap!important;
     word-break: break-word!important;
@@ -145,10 +140,11 @@ body {
     padding: 0!important;
 }
 
-.page pre, .page code {
+.page pre,
+.page code {
     color: black;
     text-shadow: none!important;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
     text-align: left;
     word-spacing: normal;
     word-wrap: normal;
@@ -242,11 +238,11 @@ body {
 }
 
 @media print {
-    html, body {
-      width: 210mm;
-      height: 297mm;
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
     }
-    
     .page {
         margin: 0;
         border: initial;
