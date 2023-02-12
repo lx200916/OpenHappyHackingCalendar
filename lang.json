@@ -51,7 +51,8 @@
     "lang": "Visual Basic",
     "class": "vbnet",
     "desc": "Visual_Basic",
-    "code": "vb"
+    "code": "vb",
+    "descriptionstr": "历史的眼泪😢"
 }, {
     "lang": "Perl",
     "class": "perl",
@@ -81,12 +82,14 @@
     "lang": "R",
     "class": "r",
     "desc": "R语言",
-    "code": "r"
+    "code": "r",
+    "descriptionstr": "学R吧,如果你想要一个高级一点的计算器."
 }, {
     "lang": "Delphi",
     "class": "pascal",
     "desc": "Delphi",
-    "code": "pas"
+    "code": "pas",
+    "descriptionstr": "历史的眼泪,另一行😭"
 }, {
     "lang": "Swift",
     "class": "swift",
@@ -98,7 +101,8 @@
     "lang": "MATLAB",
     "class": "matlab",
     "desc": "MATLAB",
-    "code": "m"
+    "code": "m",
+    "descriptionstr": "一个不能用于在我国某些大学和机构论文中的商业语言,如果不幸出现了,那它被称为Python."
 }, {
     "lang": "Go",
     "class": "go",
@@ -116,7 +120,8 @@
     "lang": "SQL",
     "class": "sql",
     "desc": "SQL",
-    "code": "sql"
+    "code": "sql",
+    "descriptionstr": "SQL是一种自然语言,因为发出者通常只表达对结果的诉求,留给接受者自行揣摩实现."
 }, {
     "lang": "HTML",
     "class": "html",
@@ -128,7 +133,8 @@
     "lang": "Dart",
     "class": "dart",
     "desc": "Dart",
-    "code": "dart"
+    "code": "dart",
+    "descriptionstr": "在与TypeScript的竞争JavaScript继承人失败后,Dart转身投入了与Kotlin竞争Java继承人的战斗."
 }, {
     "lang": "D",
     "class": "d",
@@ -176,7 +182,8 @@
     "lang": "Groovy",
     "class": "groovy",
     "desc": "Groovy",
-    "code": "groovy"
+    "code": "groovy",
+    "descriptionstr": "带JVM的Python."
 }, {
     "lang": "Julia",
     "class": "julia",
@@ -209,7 +216,7 @@
     "class": "latex",
     "desc": "TeX",
     "code": "tex",
-    "descriptionstr": "创始人高德纳表示Tex最后一次升级是将版本数改为π,那时任何余下的漏洞将被看作程序的功能."
+    "descriptionstr": "创始人高德纳表示Tex最后一次升级是将版本数改为π,那时任何余下的漏洞将被看作程序的Feature."
 }, {
     "lang": "Batch",
     "class": "cmd",
@@ -296,5 +303,5 @@
     "class": "brainfuck",
     "desc": "Brainfuck",
     "code": "bf",
-    "descriptionstr": "虽然看起来好像是在开玩笑,但下面代码的输出是<br><strong>Goodbye 2021!<br>Hello 2022!<strong>"
+    "descriptionstr": "虽然看起来好像是在开玩笑,但下面代码的输出是<br><strong>Goodbye 2023!<br>Hello 2024!<strong>"
 }]
